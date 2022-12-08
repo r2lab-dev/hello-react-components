@@ -58,7 +58,6 @@ export default [
                 minimize: true,
                 extract: true,
                 modules: true,
-                // extensions: [".css", ".scss"]
             }),
 
             terser(),
@@ -80,6 +79,6 @@ export default [
         output: [{file: "dist/index.d.ts", format: "esm"}],
         plugins: [dts()],
 
-        external: [/\.css$/], // telling rollup anything that is .css aren't part of type exports
+        external: [/\.css$/, /\.scss$/], // telling rollup anything that is .css aren't part of type exports
     },
 ]

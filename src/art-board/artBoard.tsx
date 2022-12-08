@@ -1,5 +1,5 @@
 import React from "react";
-import "./art-board.css"
+import "./art-board.scss"
 export interface ArtBoardProps {
     label: string;
 }
