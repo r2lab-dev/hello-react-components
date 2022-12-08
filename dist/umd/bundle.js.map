@@ -1,1 +1,1 @@
-{"version":3,"file":"bundle.js","sources":["../../src/art-board/artBoard.tsx"],"sourcesContent":[null],"names":["props","React","createElement","className","label"],"mappings":"+jBAOkBA,GACPC,EAAAC,cAAA,MAAA,CAAKC,UAAW,YAAYF,EAAAC,cAAA,KAAA,uBAAoBF,EAAMI,OACzDH,EAAAC,cAAA,IAAA,KAAA"}
+{"version":3,"file":"bundle.js","sources":["../../src/art-board/artBoard.tsx"],"sourcesContent":[null],"names":["props","React","createElement","className","label"],"mappings":"0SAOkBA,GACPC,EAAAC,cAAA,MAAA,CAAKC,UAAW,YAAYF,EAAAC,cAAA,KAAA,uBAAoBF,EAAMI,OACzDH,EAAAC,cAAA,IAAA,KAAA"}

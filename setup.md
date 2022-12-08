@@ -9,4 +9,5 @@ rollup-plugin-dts @rollup/plugin-terser rollup-plugin-postcss @rollup/plugin-typ
 rollup-plugin-peer-deps-external tslib --save-dev
 ```
 
-https://blog.bitsrc.io/trying-rollup-for-react-applications-d3c2304d16bf
+- https://blog.bitsrc.io/trying-rollup-for-react-applications-d3c2304d16bf
+- https://medium.com/@camille_hdl/rollup-based-dev-environment-for-javascript-part-1-eab8523c8ee6

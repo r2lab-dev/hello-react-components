@@ -1,2 +1,2 @@
-var e,t;(e=self.document)&&!e.getElementById("livereloadscript")&&((t=e.createElement("script")).async=1,t.src="//"+(self.location.host||"localhost").split(":")[0]+":35729/livereload.js?snipver=1",t.id="livereloadscript",e.getElementsByTagName("head")[0].appendChild(t));import l from"react";const a=e=>l.createElement("div",{className:"artBoard"},l.createElement("h1",null,"Hello World! - ",e.label),l.createElement("p",null,"Paragraph added, updated text, testing .."));export{a as ArtBoard};
+import e from"react";const t=t=>e.createElement("div",{className:"artBoard"},e.createElement("h1",null,"Hello World! - ",t.label),e.createElement("p",null,"Paragraph added, updated text, testing .."));export{t as ArtBoard};
 //# sourceMappingURL=index.js.map

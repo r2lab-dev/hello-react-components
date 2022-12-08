@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "React setup",
   "scripts": {
-    "dev": "rm -Rf dist/ && rollup -c -w"
+    "dev": "rm -Rf dist/ && rollup -c -w",
+    "build": "rm -Rf dist/ && rollup -c --prod"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
