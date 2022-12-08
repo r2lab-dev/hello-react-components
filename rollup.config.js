@@ -57,7 +57,7 @@ export default [
             postcss({
                 minimize: true,
                 extract: true,
-                modules: true,
+                // modules: true,
             }),
 
             terser(),

@@ -5,7 +5,7 @@ export interface ArtBoardProps {
 }
 
 const ArtBoard = (props: ArtBoardProps) => {
-    return <h1>Hello World! - {props.label}</h1>;
+    return <div className={"artBoard"}><h1>Hello World! - {props.label}</h1></div>;
 };
 
 export default ArtBoard;

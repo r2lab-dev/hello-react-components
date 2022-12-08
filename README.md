@@ -1,8 +1,9 @@
-# React Setup Example 
+# React Setup Example
 
-This is a reference project for creating react reusable components with rollup. 
+This is a reference project for creating react reusable components with rollup.
 
 ## To use with in a HTML page
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -11,11 +12,13 @@ This is a reference project for creating react reusable components with rollup.
     <title>UMD Example</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="./dist/umd/bundle.js"></script>
+    <link rel="stylesheet" href="./dist/umd/bundle.css">
 
 </head>
 <body>
 <div id="root"></div>
-<script src="./dist/umd/bundle.js"></script>
+
 <script type="text/javascript">
     const e = React.createElement;
     const domContainer = document.querySelector('#root');
@@ -26,6 +29,7 @@ This is a reference project for creating react reusable components with rollup.
 </body>
 </html>
 ```
+
 example in `examples/html-umd/index.html`
 
 ## To use with in a ReactJS App
@@ -41,4 +45,5 @@ function App() {
 
 export default App;
 ```
+
 Full example in `examples/react-app`
