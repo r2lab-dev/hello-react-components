@@ -2,16 +2,14 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
-
 // To handle css files
 import postcss from "rollup-plugin-postcss";
 import babel from '@rollup/plugin-babel';
-
 import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 // import image from '@rollup/plugin-image';
-
-
+import serve from "rollup-plugin-serve";
+import livereload from "rollup-plugin-livereload";
 import packageJson from "./package.json" assert {type: "json"};
 
 const externals = {
@@ -72,6 +70,14 @@ export default [
                     }]
                 ],
             }),
+            serve({
+                open: true,
+                verbose: true,
+                contentBase: ["", "examples/html-umd/"],
+                host: "localhost",
+                port: 3000,
+            }),
+            livereload({watch: "dist"}),
         ],
     },
     {

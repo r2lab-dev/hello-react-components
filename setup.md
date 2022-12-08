@@ -8,3 +8,5 @@ npm install rollup @rollup/plugin-node-resolve @rollup/plugin-typescript @rollup
 rollup-plugin-dts @rollup/plugin-terser rollup-plugin-postcss @rollup/plugin-typescript \
 rollup-plugin-peer-deps-external tslib --save-dev
 ```
+
+https://blog.bitsrc.io/trying-rollup-for-react-applications-d3c2304d16bf
