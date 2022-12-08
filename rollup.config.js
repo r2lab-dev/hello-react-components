@@ -38,7 +38,7 @@ export default [
                 format: "esm",
                 sourcemap: true,
                 preserveModules: false,
-            },  {
+            }, {
                 file: "dist/umd/bundle.js",
                 format: "umd",
                 exports: "named",
@@ -49,18 +49,29 @@ export default [
         ],
         plugins: [
             peerDepsExternal(),
-            resolve(),
+            resolve({
+                browser: true
+            }),
             commonjs(),
             typescript({tsconfig: "./tsconfig.json"}),
-            // typescript(),
-            // postcss(),
+            postcss({
+                minimize: true,
+                extract: true,
+                modules: true,
+                // extensions: [".css", ".scss"]
+            }),
 
-            // terser(),
+            terser(),
             // image()
             babel({
-                // exclude: 'node_modules/**',
-                presets: ["@babel/preset-react", {runtime: 'classic'}],
-                // presets: ["@babel/preset-react"],
+                babelHelpers: 'bundled',
+                presets: [
+                    ["@babel/preset-react", {
+                        runtime: 'classic',
+                        useBuiltIns: "usage",
+                        forceAllTransforms: true,
+                    }]
+                ],
             }),
         ],
     },

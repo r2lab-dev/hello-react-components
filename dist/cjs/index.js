@@ -1,12 +1,2 @@
-'use strict';
-
-var React = require('react');
-
-const ArtBoard = (props) => {
-    return React.createElement("h1", null,
-        "Hello World! - ",
-        props.label);
-};
-
-exports.ArtBoard = ArtBoard;
+"use strict";var e=require("react");exports.ArtBoard=r=>e.createElement("h1",null,"Hello World! - ",r.label);
 //# sourceMappingURL=index.js.map
